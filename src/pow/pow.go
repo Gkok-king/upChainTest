@@ -75,14 +75,12 @@ func func2(){
 	if err != nil {
         return 
     }
-
     // 签名消息
     signature, err := sign(value, privateKey)
     if err != nil {
         fmt.Println(err)
         return
     }
-
     fmt.Printf("签名值: %x\n", signature)
 
     // 验证签名
